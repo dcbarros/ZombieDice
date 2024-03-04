@@ -1,4 +1,4 @@
-package com.zombiedice.model;
+package com.zombiedice.services;
 
 import java.util.List;
 import java.util.Random;
