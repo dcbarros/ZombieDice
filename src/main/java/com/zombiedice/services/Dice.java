@@ -17,6 +17,14 @@ public class Dice {
         setFaces();
     }
 
+    public EDiceColor getColor() {
+        return color;
+    }
+
+    public List<EDiceFace> getFaces() {
+        return faces;
+    }
+
     private void setFaces() {
         this.faces = this.color == EDiceColor.GREEN 
         ? List.of(EDiceFace.BRAIN, EDiceFace.RUNNING, EDiceFace.BRAIN, EDiceFace.SHOOTING,EDiceFace.BRAIN,EDiceFace.RUNNING)
