@@ -10,6 +10,7 @@ public class Game {
     private final static Integer IDLENGTH = 7;
 
     private Long id;
+    private Boolean finishGame;
     private List<Zombie> zombies;
     private Zombie zombieWinner;
     private LocalDateTime startGame;
@@ -18,9 +19,18 @@ public class Game {
     public Game(List<Zombie> zombies) {
         this.zombies = zombies;
         this.zombieWinner = new Zombie();
+        this.finishGame = false;
         this.startGame = LocalDateTime.now();
         this.endGame = LocalDateTime.now();
         this.setId();
+    }
+
+    public Boolean getFinishGame() {
+        return finishGame;
+    }
+
+    public void setFinishGame(Boolean finishGame) {
+        this.finishGame = finishGame;
     }
 
     public Long getId() {

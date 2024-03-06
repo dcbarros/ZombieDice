@@ -125,4 +125,5 @@ public class TurnService {
     public Integer getAmoutDicesInPot(){
         return this.pot.getDices().size();
     }
+
 }
